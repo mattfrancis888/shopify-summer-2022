@@ -167,7 +167,27 @@
         height: 100%;
         object-fit: cover;
     }
-    .ironManImage {
+    // .ironManImage {
+    //     width: 12rem;
+    //     height: 12rem;
+    //     position: absolute;
+    //     right: -2%;
+    //     bottom: -30%;
+    //     animation: floatingIronMan 2s infinite alternate;
+    //     display: none;
+
+    //     @media screen and (min-width: $md_breakpoint) {
+    //         width: 25rem;
+    //         height: 25rem;
+    //         display: block;
+    //     }
+    //     @media screen and (min-width: $lg_breakpoint) {
+    //         width: 35rem;
+    //         height: 35rem;
+    //         bottom: -7rem;
+    //     }
+    // }
+    .nasaImage {
         width: 12rem;
         height: 12rem;
         position: absolute;
@@ -177,17 +197,16 @@
         display: none;
 
         @media screen and (min-width: $md_breakpoint) {
-            width: 25rem;
-            height: 25rem;
+            width: 23rem;
+            height: 20rem;
             display: block;
         }
         @media screen and (min-width: $lg_breakpoint) {
-            width: 35rem;
-            height: 35rem;
+            width: 28rem;
+            height: 25rem;
             bottom: -7rem;
         }
     }
-
     .modalFade {
         position: absolute;
         bottom: 0;

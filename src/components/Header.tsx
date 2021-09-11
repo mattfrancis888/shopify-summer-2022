@@ -14,7 +14,7 @@ const Header = () => {
                 src="https://cdn3.iconfinder.com/data/icons/social-media-2068/64/_shopping-512.png"
             />
             <div className="headerTextsWrap">
-                <h1>Shoppies</h1>
+                <h1>Spacestagram</h1>
             </div>
         </nav>
     );

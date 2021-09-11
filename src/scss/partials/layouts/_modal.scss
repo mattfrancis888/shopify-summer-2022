@@ -61,7 +61,8 @@
             max-height: 23rem;
         }
         @media screen and (min-width: $md_breakpoint) {
-            max-height: none;
+            // max-height: none;
+            max-height: 42rem;
             height: 100%;
         }
     }

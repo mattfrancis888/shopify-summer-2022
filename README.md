@@ -1,27 +1,30 @@
-# Shopify Challenge - The Shopiees: Movie awards for entrepreneurs
+# Shopify Challenge - Spacestagram: Image-sharing from the final frontier
 
-Shopify has branched out into movie award shows and we need your help. Please build us an app to help manage our movie nominations for the upcoming Shoppies.
+For the purposes of this project, Shopify is extending our mission to Make Commerce Better for Everyone to include the whole entire universe. Please build us an app to help share photos from one of NASA’s image APIs.
 
 Developed with React, React Spring, Typescript, JS, HTML, CSS.
 
 ### The Challenge
 
-We need a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished.
+We need a webpage that can pull images, and allow the user to “like” and “unlike” their favourite images.
 
 We'd like a simple to use interface that makes it easy to:
-Search OMDB and display the results (movies only)
-Add a movie from the search results to our nomination list
-View the list of films already nominated
-Remove a nominee from the nomination list
+
+-   Fetch data from one of NASA’s APIs and display the resulting images (more details under Technical Requirements)
+-   Display descriptive data for each image (for example: title, date, description, etc.)
+-   Like an image
+-   Unlike an image
 
 ### Technical requirements
 
-1. Search results should come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).
-2. Each search result should list at least its title, year of release and a button to nominate that film.
-3. Updates to the search terms should update the result list
-   Movies in search results can be added and removed from the nomination list.
-4. If a search result has already been nominated, disable its nominate button.
-5. Display a banner when the user has 5 nominations.
+1. Search results should come from NASA’s free APIs, for which you’ll need a free API key from https://api.nasa.gov -
+    - you do not need to enter anything more than your first name, last name, and email address (i.e. application url is not required)
+    - We’ve provided screenshots below of demo apps we built using the Astronomy Picture of the Day or Mars Rover Photos APIs (along with Shopify’s open source React component library: Polaris).
+    - You are free to use any NASA API you like
+    - You are free to use any front end framework/component library you like (or none at all!)
+2. Each image result should list at least a title, date of capture (ideally in earth_date) and a button to “like” that image.
+3. Each image can be “liked”, and a user should be able to undo their “like”
+4. The HTML that ends up being served client-side should be accessible and semantic (MDN reference)
 
 ## External Resources:
 
@@ -31,7 +34,7 @@ Remove a nominee from the nomination list
 
 ## What It Looks Like
 
-<img src="readmeImg/page.jpg"/>
+<img src="readmeImg/nasa_page.jpg"/>
 
 # Getting Started
 

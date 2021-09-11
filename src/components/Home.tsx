@@ -3,6 +3,7 @@ import axios from "axios";
 import Search from "./Search";
 import Nominees from "./Nominees";
 import IronMan from "../img/IronMan.png";
+import NASA from "../img/NASA.png";
 
 import HomeCarousel from "./HomeCarousel";
 import { useTransition, animated, useSpring, useTrail } from "react-spring";
@@ -11,7 +12,8 @@ import LazyLoad from "react-lazyload";
 export interface Media {
     Title: string;
     Year: string;
-    imdbID: string;
+    // imdbID: string;
+    id: string;
     Type: string;
     Poster: string;
 }
@@ -33,11 +35,14 @@ const Home: React.FC<{}> = () => {
         let mediasCopy: any = [...medias];
 
         //assuming we have an ID field in our item
-        let { imdbID } = item;
+        // let { imdbID } = item;
+        let { id } = item;
 
         //look for item in cart array
         let existingItem = mediasCopy.find(
-            (mediaItem: Media) => mediaItem.imdbID === imdbID
+            (mediaItem: Media) =>
+                // mediaItem.imdbID === imdbID
+                mediaItem.id === id
         );
 
         //if item already exists
@@ -56,11 +61,15 @@ const Home: React.FC<{}> = () => {
         localStorage.setItem("media", stringMedias);
     };
 
-    const removeItem = (imdbID: String) => {
+    const removeItem = (id: String) => {
         //create cartCopy
         let mediasCopy: any = [...medias];
 
-        mediasCopy = mediasCopy.filter((item: Media) => item.imdbID !== imdbID);
+        mediasCopy = mediasCopy.filter(
+            (item: Media) =>
+                //  item.imdbID !== imdbID
+                item.id !== id
+        );
 
         //update state and local
         setMedias(mediasCopy);
@@ -95,11 +104,13 @@ const Home: React.FC<{}> = () => {
                     >
                         <h1 className="introBannerTitle">2021 Nominees</h1>
                         <p className="introBannerTitleDesc">
-                            Search titles on OMDB and nominate your top 5
+                            Search rover pictures by Nasa and Favorite your top
+                            5 pictures
                         </p>
                     </animated.div>
                     {/* <div className="modalFade"></div> */}
-                    <img className="ironManImage" alt="" src={IronMan}></img>
+                    {/* <img className="ironManImage" alt="" src={IronMan}></img> */}
+                    <img className="nasaImage" alt="" src={NASA}></img>
                 </div>
 
                 <LazyLoad once={true}>
