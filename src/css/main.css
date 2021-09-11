@@ -584,7 +584,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.introBanner .ironManImage {
+.introBanner .nasaImage {
   width: 12rem;
   height: 12rem;
   position: absolute;
@@ -594,16 +594,16 @@ body {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .introBanner .ironManImage {
-    width: 25rem;
-    height: 25rem;
+  .introBanner .nasaImage {
+    width: 23rem;
+    height: 20rem;
     display: block;
   }
 }
 @media screen and (min-width: 992px) {
-  .introBanner .ironManImage {
-    width: 35rem;
-    height: 35rem;
+  .introBanner .nasaImage {
+    width: 28rem;
+    height: 25rem;
     bottom: -7rem;
   }
 }

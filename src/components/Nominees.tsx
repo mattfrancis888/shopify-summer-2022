@@ -243,7 +243,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                             ref={maxNomineesBannerRef}
                         >
                             <h1 className="maxNomineesTitle">
-                                Your 2021 Winners
+                                Your 2021 Favorites
                             </h1>
                             <p className="maxNomineesDesc">
                                 You have picked your top 5 nominees

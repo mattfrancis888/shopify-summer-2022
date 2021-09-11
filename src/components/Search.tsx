@@ -23,7 +23,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
     // https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
 
     const searchBarInputRef = useRef<HTMLInputElement>(null);
-    const [searchTerm, setSearchTerm] = useState("avengers");
+    const [searchTerm, setSearchTerm] = useState("500");
     const [data, dataSet] = useState<any>(null);
 
     const [showLoading, setShowLoading] = useState(false);
@@ -32,7 +32,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
         async function fetchMyAPI() {
             // const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchTerm}`;
 
-            const LINK = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${process.env.REACT_APP_API_KEY}`;
+            const LINK = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${process.env.REACT_APP_API_KEY}&sol=${searchTerm}`;
             axios
                 .get(LINK)
                 .then((response) => {
@@ -98,6 +98,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                 </h1>
             );
         else if (data) {
+            console.log("sample", data);
             if (data === INTERNET_ERROR)
                 return <h1 className="noResultText">{INTERNET_ERROR}</h1>;
             if (data === MANY_ERROR)
@@ -109,6 +110,8 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
             else if (data === MOVIE_NOT_FOUND)
                 return <h1 className="noResultText">{MOVIE_NOT_FOUND}</h1>;
             else if (data instanceof Array) {
+                if (data.length === 0)
+                    return <h1 className="noResultText">No Results</h1>;
                 return trail.map((animation, index: number) => {
                     let mediaFromSearch = data[index];
 
@@ -205,7 +208,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                 Search
             </animated.h1>
             <animated.h1 style={translateTitle} className="searchForTitle">
-                {`Searching for: '${searchTerm}'`}
+                {`Searching pictures at Sol (Days On Mars): '${searchTerm}'`}
             </animated.h1>
             <form className={"searchBarForm"}>
                 <input
@@ -213,7 +216,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                     data-testid="searchBarInput"
                     className="searchBarInput"
                     type="search"
-                    placeholder="Search titles"
+                    placeholder="Search Pictures From Sol of 1-1000"
                     name="search"
                     onChange={(e) => {
                         setSearchTerm(e.target.value);

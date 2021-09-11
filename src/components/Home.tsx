@@ -3,6 +3,7 @@ import axios from "axios";
 import Search from "./Search";
 import Nominees from "./Nominees";
 import IronMan from "../img/IronMan.png";
+import NASA from "../img/NASA.png";
 
 import HomeCarousel from "./HomeCarousel";
 import { useTransition, animated, useSpring, useTrail } from "react-spring";
@@ -103,11 +104,13 @@ const Home: React.FC<{}> = () => {
                     >
                         <h1 className="introBannerTitle">2021 Nominees</h1>
                         <p className="introBannerTitleDesc">
-                            Search titles on OMDB and nominate your top 5
+                            Search rover pictures by Nasa and Favorite your top
+                            5 pictures
                         </p>
                     </animated.div>
                     {/* <div className="modalFade"></div> */}
-                    <img className="ironManImage" alt="" src={IronMan}></img>
+                    {/* <img className="ironManImage" alt="" src={IronMan}></img> */}
+                    <img className="nasaImage" alt="" src={NASA}></img>
                 </div>
 
                 <LazyLoad once={true}>
