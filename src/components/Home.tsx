@@ -11,7 +11,8 @@ import LazyLoad from "react-lazyload";
 export interface Media {
     Title: string;
     Year: string;
-    imdbID: string;
+    // imdbID: string;
+    id: string;
     Type: string;
     Poster: string;
 }
@@ -33,11 +34,14 @@ const Home: React.FC<{}> = () => {
         let mediasCopy: any = [...medias];
 
         //assuming we have an ID field in our item
-        let { imdbID } = item;
+        // let { imdbID } = item;
+        let { id } = item;
 
         //look for item in cart array
         let existingItem = mediasCopy.find(
-            (mediaItem: Media) => mediaItem.imdbID === imdbID
+            (mediaItem: Media) =>
+                // mediaItem.imdbID === imdbID
+                mediaItem.id === id
         );
 
         //if item already exists
@@ -56,11 +60,15 @@ const Home: React.FC<{}> = () => {
         localStorage.setItem("media", stringMedias);
     };
 
-    const removeItem = (imdbID: String) => {
+    const removeItem = (id: String) => {
         //create cartCopy
         let mediasCopy: any = [...medias];
 
-        mediasCopy = mediasCopy.filter((item: Media) => item.imdbID !== imdbID);
+        mediasCopy = mediasCopy.filter(
+            (item: Media) =>
+                //  item.imdbID !== imdbID
+                item.id !== id
+        );
 
         //update state and local
         setMedias(mediasCopy);

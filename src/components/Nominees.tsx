@@ -10,7 +10,8 @@ export const MAX_NOMINEE = 5;
 
 interface NomineeProps {
     medias: any;
-    removeItem(imdbID: String): void;
+    // removeItem(imdbID: String): void;
+    removeItem(id: String): void;
 }
 const Nominee: React.FC<NomineeProps> = (props) => {
     let { medias } = props;
@@ -124,6 +125,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                     <React.Fragment>
                         {trail.map((animation, index: number) => {
                             let media = medias[index];
+
                             return (
                                 <animated.div
                                     className="nomineeMedia"
@@ -131,7 +133,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                                     key={index}
                                 >
                                     <Media media={media}>
-                                        <img
+                                        {/* <img
                                             src={
                                                 media.Poster !== "N/A"
                                                     ? media.Poster
@@ -142,16 +144,33 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                                                 // e.target.style = 'padding: 8px; margin: 16px' // inline styles in html format
                                             }}
                                             alt="poster"
+                                        /> */}
+                                        <img
+                                            src={
+                                                media.img_src
+                                                    ? media.img_src
+                                                    : NoImageFound
+                                            }
+                                            onError={(e: any) => {
+                                                e.target.src = NoImageFound; // some replacement image
+                                                // e.target.style = 'padding: 8px; margin: 16px' // inline styles in html format
+                                            }}
+                                            alt="poster"
                                         />
                                         <div className="nomineeMediaTextWrap">
-                                            <h1>{media.Title}</h1>
+                                            {/* <h1>{media.Title}</h1>
                                             <p>{media.Year}</p>
+                                             */}
+                                            <h1>ID: {media.id}</h1>
+                                            <h1>{media.rover.name} Rover</h1>
+                                            <p>{media.earth_date}</p>
                                         </div>
                                         <button
                                             className="removeButton"
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                props.removeItem(media.imdbID);
+                                                // props.removeItem(media.imdbID);
+                                                props.removeItem(media.id);
                                             }}
                                         >
                                             Remove

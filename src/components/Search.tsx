@@ -31,7 +31,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
     useEffect(() => {
         async function fetchMyAPI() {
             // const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchTerm}`;
-            //https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=fGhdjismdxdoa9rufXPRvscf0Xw0Fo2DHWbfJCK1
+
             const LINK = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${process.env.REACT_APP_API_KEY}`;
             axios
                 .get(LINK)
@@ -113,7 +113,8 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                     let mediaFromSearch = data[index];
 
                     let mediasInLocalStorage = medias.find(
-                        (o: MediaType) => o.imdbID === mediaFromSearch.imdbID
+                        // (o: MediaType) => o.imdbID === mediaFromSearch.imdbID
+                        (o: MediaType) => o.id === mediaFromSearch.id
                     );
                     return (
                         <animated.div
@@ -124,7 +125,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                             <Media media={mediaFromSearch}>
                                 <img
                                     src={
-                                        mediaFromSearch.img_src !== "N/A"
+                                        mediaFromSearch.img_src
                                             ? mediaFromSearch.img_src
                                             : NoImageFound
                                     }
@@ -145,6 +146,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                     <h1>Nominated</h1>
                                 </div>
                                 <div className="nomineeMediaTextWrap">
+                                    <h1>ID: {mediaFromSearch.id}</h1>
                                     <h1>{mediaFromSearch.rover.name} Rover</h1>
                                     <p>{mediaFromSearch.earth_date}</p>
                                 </div>
