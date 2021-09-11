@@ -23,7 +23,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
     // https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
 
     const searchBarInputRef = useRef<HTMLInputElement>(null);
-    const [searchTerm, setSearchTerm] = useState("500");
+    const [searchTerm, setSearchTerm] = useState("1000");
     const [data, dataSet] = useState<any>(null);
 
     const [showLoading, setShowLoading] = useState(false);

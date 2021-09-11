@@ -17,52 +17,46 @@ const timer = 5000;
 
 const slides = [
     {
-        title: "Avengers",
+        title: "Pic1",
         mobileImage:
-            "https://allears.net/wp-content/uploads/2020/10/Avengers-Infinity-War-Poster.jpg",
-        image:
-            "https://allears.net/wp-content/uploads/2020/10/Avengers-Infinity-War-Poster.jpg",
-        logo:
-            "https://occ-0-724-2433.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABTk2XN7GLRTLHV9pVLOUV7ZWdTgnQqitxdYryNH-ZwAkyO2vJRtwtlrgt1_iDdjZQrOJ0E_BN1NdSFtWQm4L7qmxDs2we2VVen4.webp?r=5b7",
+            "http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg",
+        image: "http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg",
+        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
         description: "2020 Winner",
         fallbackMobileImage:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
         fallbackImage:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
         fallbackLogo:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418809/shopify1/AAAABTk2XN7GLRTLHV9pVLOUV7ZWdTgnQqitxdYryNH-ZwAkyO2vJRtwtlrgt1_iDdjZQrOJ0E_BN1NdSFtWQm4L7qmxDs2we2VVen4.webp",
+            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
     },
     {
-        title: "Inception",
+        title: "Pic2",
         mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495252/shopify1/rsz_19927-inception.jpg",
-        image:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495252/shopify1/rsz_19927-inception.jpg",
-        logo:
-            "https://occ-0-724-2433.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABSfHL5aFCPa5-J_HiLn4elONYPMesDMdp1JreFu3-SeoJdZ3-gRIOv9sQFPNB6EI-fAXl6NkgfUx5rXpn2iNzOAxrAzHBMu-7WU.webp?r=9b8",
+            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
+        image: "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
+        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
         description: "2019 Winner",
         fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495252/shopify1/rsz_19927-inception.jpg",
+            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
         fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495252/shopify1/rsz_19927-inception.jpg",
+            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
         fallbackLogo:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620419044/shopify1/AAAABSfHL5aFCPa5-J_HiLn4elONYPMesDMdp1JreFu3-SeoJdZ3-gRIOv9sQFPNB6EI-fAXl6NkgfUx5rXpn2iNzOAxrAzHBMu-7WU.webp",
+            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
     },
     {
-        title: "Interstellar",
+        title: "Pic3",
         mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495338/shopify1/rsz_interstellar-2014-poster-wallpaper.jpg",
-        image:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495338/shopify1/rsz_interstellar-2014-poster-wallpaper.jpg",
-        logo:
-            "https://occ-0-724-2433.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABanT-nmc6Y-uI4IRNbfyvUcC__k-xpELGiO8LllYxqiQbH8rINoEYCn7qP-TL8_I2lrpCpfVK9guqkpECOB1XCiTAnx_zuCYEew.webp?r=b34",
+            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
+        image: "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
+        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
         description: "2018 Winner",
         fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495338/shopify1/rsz_interstellar-2014-poster-wallpaper.jpg",
+            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
         fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620495338/shopify1/rsz_interstellar-2014-poster-wallpaper.jpg",
+            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
         fallbackLogo:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620419491/shopify1/AAAABanT-nmc6Y-uI4IRNbfyvUcC__k-xpELGiO8LllYxqiQbH8rINoEYCn7qP-TL8_I2lrpCpfVK9guqkpECOB1XCiTAnx_zuCYEew.webp",
+            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
     },
 ];
 
