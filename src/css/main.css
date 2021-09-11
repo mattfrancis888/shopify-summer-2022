@@ -1134,7 +1134,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .modalBannerImageWrap img {
-    max-height: none;
+    max-height: 42rem;
     height: 100%;
   }
 }

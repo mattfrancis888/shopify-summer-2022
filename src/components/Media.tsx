@@ -41,12 +41,14 @@ interface MediaProps {
 
 interface ModalDataType {
     img_src: string;
-    Title: string;
-    Type: string;
-    Year: string;
-    Genre: string;
-    Plot: string;
-    Actors: string;
+    rover: any;
+    camera: any;
+    earth_date: string;
+    // Type: string;
+    // Year: string;
+    // Genre: string;
+    // Plot: string;
+    // Actors: string;
 }
 const Media: React.FC<MediaProps> = (props) => {
     let { media } = props;
@@ -83,24 +85,29 @@ const Media: React.FC<MediaProps> = (props) => {
 
     const modalShow = (clickedMedia: any) => {
         setFirstRender(false);
+        console.log("modal", clickedMedia);
+        setModalData(clickedMedia);
+        setShowModal(true);
+        // const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${clickedMedia.imdbID}`;
 
-        const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${clickedMedia.imdbID}`;
-        axios
-            .get(LINK)
-            .then((response) => {
-                // handle success
-                //  setShowLoading(false);
+        // const LINK = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&id=${clickedMedia.id}&api_key=${process.env.REACT_APP_API_KEY}`;
+        // axios
+        //     .get(LINK)
+        //     .then((response) => {
+        //         // handle success
+        //         //  setShowLoading(false);
 
-                setModalData(response.data);
-                setShowModal(true);
-            })
-            .catch(function (error) {
-                // handle error
-                // dataSet(INTERNET_ERROR);
-                console.log("API ERROR:", error);
-                alert("Check your internet connection and try again");
-                //setShowLoading(false);
-            });
+        //         // setModalData(response.data.photos[0]);
+
+        //         setShowModal(true);
+        //     })
+        //     .catch(function (error) {
+        //         // handle error
+        //         // dataSet(INTERNET_ERROR);
+        //         console.log("API ERROR:", error);
+        //         alert("Check your internet connection and try again");
+        //         //setShowLoading(false);
+        //     });
     };
     const modalOnCancel = () => {
         setShowModal(false);
@@ -140,15 +147,17 @@ const Media: React.FC<MediaProps> = (props) => {
                     <div className="modalInfoWrap">
                         <div className="modalTextSection modalTextDateAndDescSection">
                             <h1 className="modalMediaTitle">
-                                {modalData.Title}
+                                {modalData.rover.name} Rover
                             </h1>
-                            <h3 className="modalMediaType">{modalData.Type}</h3>
-                            <p className="modalMediaDescOther">{`Released: ${modalData.Year}`}</p>
-                            <p className="modalMediaDescOther">{`Genre: ${modalData.Genre}`}</p>
-                            <p className="modalMediaPlot">{modalData.Plot}</p>
+                            <h3 className="modalMediaType">
+                                Status: {modalData.rover.status}
+                            </h3>
+                            <p className="modalMediaDescOther">{`Camera: ${modalData.camera.full_name}`}</p>
+                            <p className="modalMediaDescOther">{`Date: ${modalData.earth_date}`}</p>
+                            {/* <p className="modalMediaPlot">{modalData.Plot}</p>
                             <p className="modalMediaDescOther">
                                 {`Cast: ${modalData.Actors}`}
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
