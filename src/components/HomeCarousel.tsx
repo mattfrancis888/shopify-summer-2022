@@ -19,44 +19,44 @@ const slides = [
     {
         title: "Pic1",
         mobileImage:
-            "http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg",
-        image: "http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg",
-        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384571/shopify2/wise_nebula.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384571/shopify2/wise_nebula.jpg",
+        logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "2020 Winner",
         fallbackMobileImage:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
         fallbackImage:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
         fallbackLogo:
-            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
     {
         title: "Pic2",
         mobileImage:
-            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
-        image: "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
-        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
+        logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "2019 Winner",
         fallbackMobileImage:
-            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
         fallbackImage:
-            "https://image.cnbcfm.com/api/v1/image/106194367-1571709112694gettyimages-103017185.jpeg?v=1571710756&w=1600&h=900",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
         fallbackLogo:
-            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
     {
         title: "Pic3",
         mobileImage:
-            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
-        image: "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
-        logo: "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
+        logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "2018 Winner",
         fallbackMobileImage:
-            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
         fallbackImage:
-            "https://www.jpl.nasa.gov/edu/images/news/helixnebula-169.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
         fallbackLogo:
-            "http://assets.stickpng.com/images/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
 ];
 
