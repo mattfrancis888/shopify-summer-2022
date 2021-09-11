@@ -29,7 +29,7 @@ export interface ModalProps {
 //     Language: "English, Russian, Hindi",
 //     Country: "USA",
 //     Awards: "Nominated for 1 Oscar. Another 38 wins & 79 nominations.",
-//     Poster:
+//     img_src:
 //         "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
 // };
 
@@ -40,7 +40,7 @@ interface MediaProps {
 }
 
 interface ModalDataType {
-    Poster: string;
+    img_src: string;
     Title: string;
     Type: string;
     Year: string;
@@ -132,7 +132,7 @@ const Media: React.FC<MediaProps> = (props) => {
                 <div className="modalContentContainer" onLoad={() => {}}>
                     <div className="modalBannerContainer">
                         <div className="modalBannerImageWrap">
-                            <img src={modalData.Poster} alt=""></img>
+                            <img src={modalData.img_src} alt=""></img>
 
                             <div className="modalFade"></div>
                         </div>

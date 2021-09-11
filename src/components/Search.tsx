@@ -30,14 +30,16 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
 
     useEffect(() => {
         async function fetchMyAPI() {
-            const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchTerm}`;
+            // const LINK = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${searchTerm}`;
+            //https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=fGhdjismdxdoa9rufXPRvscf0Xw0Fo2DHWbfJCK1
+            const LINK = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=${process.env.REACT_APP_API_KEY}`;
             axios
                 .get(LINK)
                 .then((response) => {
                     // handle success
 
-                    if (response.data.Search)
-                        dataSet(response.data.Search.slice(0, 5));
+                    if (response.data.photos)
+                        dataSet(response.data.photos.slice(0, 5));
                     else if (response.data.Error === MANY_ERROR)
                         dataSet(MANY_ERROR);
                     else if (response.data.Error === MOVIE_NOT_FOUND)
@@ -109,6 +111,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
             else if (data instanceof Array) {
                 return trail.map((animation, index: number) => {
                     let mediaFromSearch = data[index];
+
                     let mediasInLocalStorage = medias.find(
                         (o: MediaType) => o.imdbID === mediaFromSearch.imdbID
                     );
@@ -121,16 +124,16 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                             <Media media={mediaFromSearch}>
                                 <img
                                     src={
-                                        mediaFromSearch.Poster !== "N/A"
-                                            ? mediaFromSearch.Poster
+                                        mediaFromSearch.img_src !== "N/A"
+                                            ? mediaFromSearch.img_src
                                             : NoImageFound
                                     }
                                     className={
                                         mediasInLocalStorage != null
-                                            ? "showNomineePosterBorder"
-                                            : "hideNominePosterBorder"
+                                            ? "showNomineeimg_srcBorder"
+                                            : "hideNomineimg_srcBorder"
                                     }
-                                    alt="poster"
+                                    alt="img_src"
                                 />
                                 <div
                                     className={
@@ -142,8 +145,8 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                     <h1>Nominated</h1>
                                 </div>
                                 <div className="nomineeMediaTextWrap">
-                                    <h1>{mediaFromSearch.Title}</h1>
-                                    <p>{mediaFromSearch.Year}</p>
+                                    <h1>{mediaFromSearch.rover.name} Rover</h1>
+                                    <p>{mediaFromSearch.earth_date}</p>
                                 </div>
                                 <button
                                     className={`nominateButton ${
