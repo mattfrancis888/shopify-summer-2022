@@ -191,9 +191,9 @@ const HomeCarousel: React.FC<{}> = () => {
                 <Slide
                     index={index}
                     key={index}
-                    className={`homeCarouselContainer`}
+                    className={`home-carousel-container`}
                 >
-                    <div className="backgroundContainer">
+                    <div className="background-container">
                         {/* Whenever the slide gets clicked, it makes a network request for the image becasue of
                         the hook this is bad.
                         Issue on: https://github.com/pmndrs/react-spring/discussions/1377
@@ -306,7 +306,7 @@ const HomeCarousel: React.FC<{}> = () => {
         return slides.map((slide, index) => {
             return (
                 <div
-                    className="dotInnerWrap"
+                    className="dot__wrap--inner"
                     key={index}
                     //Because of the ref click above, using onClick={..} would trigger this unintentionally
                     //But if we do onfocus, when a user clicks on the button, it will stop the autoplay
@@ -328,8 +328,8 @@ const HomeCarousel: React.FC<{}> = () => {
                                         <animated.div
                                             className={
                                                 item.stopAutoplay
-                                                    ? "dotFillHide"
-                                                    : "dotFill"
+                                                    ? "dot__fill--hide"
+                                                    : "dot__fill"
                                             }
                                             style={style}
                                         ></animated.div>
@@ -380,9 +380,9 @@ const HomeCarousel: React.FC<{}> = () => {
                     // isPlaying={stopAutoplay ? false : true}
                     // interval={5000}
                 >
-                    <div className="sliderAndDotWrap">
+                    <div className="slider-and-dot">
                         <Slider>{renderSlides()}</Slider>
-                        <div className="dotWrap">{renderDots()}</div>
+                        <div className="dot__wrap">{renderDots()}</div>
                     </div>
                 </CarouselProvider>
             </div>

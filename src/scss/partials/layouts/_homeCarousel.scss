@@ -1,34 +1,54 @@
-.sliderAndDotWrap {
+.slider-and-dot {
     position: relative;
 }
-.dotWrap {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    justify-content: center;
-    width: 100%;
-    background-color: #0b0d12;
-    button {
-        position: relative;
-        transition: background-color 0.2s;
-        background: rgba(255, 255, 255, 0.5);
-        outline: none !important;
-        box-shadow: none !important;
-        border: none;
-        margin: 0;
-        margin-right: 0.3rem;
-        width: 10rem;
-        padding: 0.4rem;
+
+.dot {
+    &__wrap {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        justify-content: center;
+        width: 100%;
+        background-color: #0b0d12;
+        button {
+            position: relative;
+            transition: background-color 0.2s;
+            background: rgba(255, 255, 255, 0.5);
+            outline: none !important;
+            box-shadow: none !important;
+            border: none;
+            margin: 0;
+            margin-right: 0.3rem;
+            width: 10rem;
+            padding: 0.4rem;
+        }
+        .carousel__dot--selected {
+            background: #0086ca !important;
+        }
+        &--inner {
+            padding-bottom: 0.5rem;
+        }
     }
-    .carousel__dot--selected {
-        background: #0086ca !important;
+    &__fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #00aeff;
+        &--hide {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+        }
     }
 }
-.dotInnerWrap {
-    padding-bottom: 0.5rem;
-}
-.homeCarouselContainer {
+
+.home-carousel-container {
     position: relative;
     display: flex;
     width: 100%;
@@ -50,28 +70,11 @@
     }
 }
 
-.backgroundContainer {
+.background-container {
     position: relative;
     background: black;
     height: 100%;
     text-align: center;
-}
-
-.dotFill {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #00aeff;
-}
-.dotFillHide {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
 }
 
 .slide {
