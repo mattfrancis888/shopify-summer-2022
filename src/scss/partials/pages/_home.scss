@@ -106,14 +106,11 @@
     margin-top: 1.5rem;
     h1 {
         margin: 0;
-        font-size: 1rem;
         font-weight: bold;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        @media screen and (min-width: $sm_breakpoint) {
-            font-size: 1.4rem;
-        }
+        font-size: $font-size-md;
     }
     p {
         color: #858585;
