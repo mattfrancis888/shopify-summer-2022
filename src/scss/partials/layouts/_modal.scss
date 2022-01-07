@@ -10,40 +10,103 @@
     height: 100%;
     cursor: pointer;
     z-index: 2;
+    &__box {
+        position: relative;
+        cursor: initial;
+        // background-color: #181818;
+        background-color: #02021e;
+        width: 70%;
+        overflow: hidden;
+        border-radius: 0.8rem 0.8rem;
+
+        h2 {
+            display: none;
+        }
+        &--close {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 1;
+            font-size: 1.2rem;
+            @media screen and (min-width: $sm_breakpoint) {
+                font-size: 1.4rem;
+            }
+            @media screen and (min-width: $md_breakpoint) {
+                font-size: 1.6rem;
+            }
+            @media screen and (min-width: $lg_breakpoint) {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__banner {
+        &-image-wrap {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2rem;
+            p {
+                font-size: 0.7rem;
+                @media screen and (min-width: 420px) {
+                    font-size: 0.9rem;
+                }
+                @media screen and (min-width: $sm_breakpoint) {
+                    font-size: 1rem;
+                }
+                @media screen and (min-width: $md_breakpoint) {
+                    font-size: 1.4rem;
+                }
+            }
+            img {
+                max-width: 100%;
+            }
+            max-width: 34%;
+            @media screen and (min-width: $sm_breakpoint) {
+                left: 3rem;
+            }
+            @media screen and (min-width: $md_breakpoint) {
+                left: 5rem;
+            }
+            @media screen and (min-width: $md_breakpoint) {
+                max-width: 30%;
+            }
+        }
+    }
 }
 
-.modalBox {
-    position: relative;
-    cursor: initial;
-    // background-color: #181818;
-    background-color: #02021e;
-    width: 70%;
-    overflow: hidden;
-    border-radius: 0.8rem 0.8rem;
+// .modal__box {
+//     position: relative;
+//     cursor: initial;
+//     // background-color: #181818;
+//     background-color: #02021e;
+//     width: 70%;
+//     overflow: hidden;
+//     border-radius: 0.8rem 0.8rem;
 
-    h2 {
-        display: none;
-    }
-    .modalCloseIcon {
-        cursor: pointer;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        z-index: 1;
-        font-size: 1.2rem;
-        @media screen and (min-width: $sm_breakpoint) {
-            font-size: 1.4rem;
-        }
-        @media screen and (min-width: $md_breakpoint) {
-            font-size: 1.6rem;
-        }
-        @media screen and (min-width: $lg_breakpoint) {
-            font-size: 2rem;
-        }
-    }
-}
+//     h2 {
+//         display: none;
+//     }
+//     .modal__box--close {
+//         cursor: pointer;
+//         position: absolute;
+//         top: 1rem;
+//         right: 1rem;
+//         z-index: 1;
+//         font-size: 1.2rem;
+//         @media screen and (min-width: $sm_breakpoint) {
+//             font-size: 1.4rem;
+//         }
+//         @media screen and (min-width: $md_breakpoint) {
+//             font-size: 1.6rem;
+//         }
+//         @media screen and (min-width: $lg_breakpoint) {
+//             font-size: 2rem;
+//         }
+//     }
+// }
 
-.centerLoadingForModal {
+.modal__loading--center {
     display: flex;
     justify-content: center;
     align-items: center;
