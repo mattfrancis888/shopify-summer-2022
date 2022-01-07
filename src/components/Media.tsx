@@ -136,7 +136,7 @@ const Media: React.FC<MediaProps> = (props) => {
     const renderModalContent = () => {
         if (modalData)
             return (
-                <div className="modalContentContainer" onLoad={() => {}}>
+                <div className="modal__content-container" onLoad={() => {}}>
                     <div className="modal__banner">
                         <div className="modal__banner-image-wrap">
                             <img src={modalData.img_src} alt=""></img>

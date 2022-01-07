@@ -141,29 +141,18 @@
             overflow: hidden;
         }
     }
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: $md_breakpoint) {
+            flex-direction: row;
+        }
+    }
 }
 
 .modal__loading--center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modalMediaCastWrap,
-.modalMediaGenreWrap {
-    display: flex;
-}
-
-.modalGreyTextInfo {
-    color: #777;
-    margin-right: 0.25rem;
-}
-
-.modalContentContainer {
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: $md_breakpoint) {
-        flex-direction: row;
-    }
 }
