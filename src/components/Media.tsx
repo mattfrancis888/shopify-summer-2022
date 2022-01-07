@@ -137,25 +137,25 @@ const Media: React.FC<MediaProps> = (props) => {
         if (modalData)
             return (
                 <div className="modalContentContainer" onLoad={() => {}}>
-                    <div className="modalBannerContainer">
-                        <div className="modalBannerImageWrap">
+                    <div className="modal__banner">
+                        <div className="modal__banner-image-wrap">
                             <img src={modalData.img_src} alt=""></img>
 
-                            <div className="modalFade"></div>
+                            <div className="modal__fade"></div>
                         </div>
                     </div>
-                    <div className="modalInfoWrap">
-                        <div className="modalTextSection modalTextDateAndDescSection">
-                            <h1 className="modalMediaTitle">
+                    <div className="modal__info">
+                        <div className="modal__info-text modal__info-text--date-and-desc">
+                            <h1 className="modal__media-title">
                                 {modalData.rover.name} Rover
                             </h1>
-                            <h3 className="modalMediaType">
+                            <h3 className="modal__media-type">
                                 Status: {modalData.rover.status}
                             </h3>
-                            <p className="modalMediaDescOther">{`Camera: ${modalData.camera.full_name}`}</p>
-                            <p className="modalMediaDescOther">{`Date: ${modalData.earth_date}`}</p>
-                            {/* <p className="modalMediaPlot">{modalData.Plot}</p>
-                            <p className="modalMediaDescOther">
+                            <p className="modal__media-desc-other">{`Camera: ${modalData.camera.full_name}`}</p>
+                            <p className="modal__media-desc-other">{`Date: ${modalData.earth_date}`}</p>
+                            {/* <p className="modal__media-plot">{modalData.Plot}</p>
+                            <p className="modal__media-desc-other">
                                 {`Cast: ${modalData.Actors}`}
                             </p> */}
                         </div>
