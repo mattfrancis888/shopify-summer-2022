@@ -199,7 +199,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
         Search rover pictures
       </animated.h1>
       <animated.h1 style={translateTitle} className="searchForTitle">
-        {`Searching pictures at Sol (Days On Mars): '${searchTerm}'`}
+        {`Searching rover pictures at day: '${searchTerm}'`}
       </animated.h1>
       <form className={"searchBarForm"}>
         <input
@@ -207,7 +207,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
           data-testid="searchBarInput"
           className="searchBarInput"
           type="search"
-          placeholder="Search Pictures From Sol of 1-1000"
+          placeholder="Search Pictures From day 1-1000"
           name="search"
           onChange={(e) => {
             setSearchTerm(e.target.value);
@@ -223,3 +223,4 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
   );
 };
 export default Searchbar;
+//note: sol means  (day in mars)
