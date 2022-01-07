@@ -104,8 +104,8 @@ const Home: React.FC<{}> = () => {
                     >
                         <h1 className="introBannerTitle">2021 Nominees</h1>
                         <p className="introBannerTitleDesc">
-                            Search rover pictures by Nasa and Favorite your top
-                            5 pictures
+                            Search rover pictures by Nasa and like your top 5
+                            pictures
                         </p>
                     </animated.div>
                     {/* <div className="modalFade"></div> */}
