@@ -23,6 +23,7 @@
         "react-scripts": "4.0.3",
         "react-spinners": "^0.10.6",
         "react-spring": "^9.1.2",
+        "sass": "^1.46.0",
         "typescript": "^4.2.4",
         "web-vitals": "^1.1.1"
     },
@@ -49,5 +50,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "file-loader": "^6.2.0"
     }
 }
