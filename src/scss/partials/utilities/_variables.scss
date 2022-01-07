@@ -10,3 +10,10 @@ $sm-breakpoint: 520px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;
 $xl-breakpoint: 1200px;
+
+$font-size-xs: clamp(0.75rem, 1vw, 0.875rem);
+$font-size-sm: clamp(0.875rem, 1vw, 1rem);
+$font-size-md: clamp(1.175rem, 2vw, 1.375rem);
+$font-size-lg: clamp(1.3rem, 2vw, 2rem);
+$font-size-xl: clamp(2rem, 3vw, 3.2rem);
+$font-size-xxl: clamp(3rem, 4vw, 5rem);

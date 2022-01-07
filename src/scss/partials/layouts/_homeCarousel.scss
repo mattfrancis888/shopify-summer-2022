@@ -107,25 +107,25 @@
 }
 .slideDesc {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2.5rem;
+
     line-height: 1.2;
     margin: 0;
     margin-top: 1.5rem;
     text-shadow: 4px 7px 17px rgb(0 0 0 / 80%);
 
     @media screen and (min-width: $sm_breakpoint) {
-        font-size: 4rem;
+        // font-size: 4rem;
         margin-top: 2rem;
     }
     @media screen and (min-width: $md_breakpoint) {
-        font-size: 4rem;
+        // font-size: 4rem;
         margin-top: 3rem;
     }
     @media screen and (min-width: $lg_breakpoint) {
-        font-size: 6.8rem;
+        // font-size: 6.8rem;
         width: 50rem;
     }
+    font-size: $font-size-xl;
 }
 
 .slideBackground {
