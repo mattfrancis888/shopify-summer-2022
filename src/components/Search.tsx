@@ -196,7 +196,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
   return (
     <React.Fragment>
       <animated.h1 style={translateTitle} className="searchAndNomineeTitle">
-        Search
+        Search rover pictures
       </animated.h1>
       <animated.h1 style={translateTitle} className="searchForTitle">
         {`Searching pictures at Sol (Days On Mars): '${searchTerm}'`}
