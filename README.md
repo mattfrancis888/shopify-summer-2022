@@ -33,7 +33,7 @@ We'd like a simple to use interface that makes it easy to:
 
 Using `axe` I am able to make the site accesibile. The remaining warnings are because of chrome extensions and libraries that are not up to date with accesibility standards yet.
 
-<img src="readmeImg/nasa_page_2.jpg"/>
+<img src="readmeImg/shopify_accesibility.jpg"/>
 
 
 ## External Resources:
