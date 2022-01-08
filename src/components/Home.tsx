@@ -97,15 +97,15 @@ const Home: React.FC<{}> = () => {
         <React.Fragment>
             <HomeCarousel />
             <div className="home-content-section">
-                <div className="introBanner">
+                <div className="intro-banner">
                     <animated.div
                         className="intro-banner__text-wrap"
                         // style={translateTitle}
                     >
-                        <h1 className="introBannerTitle">
+                        <h1 className="intro-banner__text-wrap-title">
                             Explore Mars WIth Nasa
                         </h1>
-                        <p className="introBannerTitleDesc">
+                        <p className="intro-banner__text-wrap-desc">
                             Search rover pictures and like your top 5 pictures
                         </p>
                     </animated.div>
