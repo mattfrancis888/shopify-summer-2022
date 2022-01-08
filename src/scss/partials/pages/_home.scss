@@ -1,10 +1,10 @@
-.homeContentSection {
+.home-content-section {
     padding: 0rem 3rem;
     @media screen and (min-width: $md_breakpoint) {
         padding: 0rem 5rem;
     }
 }
-.searchAndNomineeTitle {
+.search-and-nominee-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -32,7 +32,7 @@
         grid-gap: 1.5rem;
     }
 }
-.noResultText {
+.no-result-text {
     text-transform: uppercase;
     position: absolute;
     top: -2rem;
@@ -149,6 +149,42 @@
     }
 }
 
+.intro-banner {
+    position: relative;
+    @media screen and (min-width: $md_breakpoint) {
+        min-height: 10rem;
+    }
+    @media screen and (min-width: $lg_breakpoint) {
+        min-height: 10rem;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__text-wrap {
+        padding: 3rem 0;
+        width: 100%;
+        @media screen and (min-width: $sm_breakpoint) {
+            width: 75%;
+        }
+        .introBannerTitle {
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            font-size: $font-size-xxl;
+        }
+        .introBannerTitleDesc {
+            margin: 0;
+            text-transform: uppercase;
+            // font-size: 1.3rem;
+            // @media screen and (min-width: $md_breakpoint) {
+            //     font-size: 2rem;
+            // }
+            font-size: $font-size-lg;
+        }
+    }
+}
+
 .introBanner {
     position: relative;
     @media screen and (min-width: $md_breakpoint) {
@@ -157,88 +193,24 @@
     @media screen and (min-width: $lg_breakpoint) {
         min-height: 10rem;
     }
-    .introBannerImage {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    // .ironManImage {
-    //     width: 12rem;
-    //     height: 12rem;
-    //     position: absolute;
-    //     right: -2%;
-    //     bottom: -30%;
-    //     animation: floatingIronMan 2s infinite alternate;
-    //     display: none;
-
-    //     @media screen and (min-width: $md_breakpoint) {
-    //         width: 25rem;
-    //         height: 25rem;
-    //         display: block;
-    //     }
-    //     @media screen and (min-width: $lg_breakpoint) {
-    //         width: 35rem;
-    //         height: 35rem;
-    //         bottom: -7rem;
-    //     }
-    // }
-    .nasaImage {
-        width: 12rem;
-        height: 12rem;
-        position: absolute;
-        right: -2%;
-        bottom: -30%;
-        animation: floatingIronMan 2s infinite alternate;
-        display: none;
-
-        @media screen and (min-width: $md_breakpoint) {
-            width: 23rem;
-            height: 20rem;
-            display: block;
-        }
-        @media screen and (min-width: $lg_breakpoint) {
-            width: 28rem;
-            height: 25rem;
-            bottom: -7rem;
-        }
-    }
-    .modal__fade {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background: rgba(0, 0, 0, 0.4);
-        background-color: #02021e;
-        opacity: 0.4;
-        background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.8) 0,
-            rgba(0, 0, 0, 0) 40%,
-            rgba(0, 0, 0, 0) 75%,
-            rgba(0, 0, 0, 0.8) 100%
-        );
-    }
 }
+.nasa-image {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    right: -2%;
+    bottom: -30%;
+    animation: floatingIronMan 2s infinite alternate;
+    display: none;
 
-.introBannerTextWrap {
-    padding: 3rem 0;
-    width: 100%;
-    @media screen and (min-width: $sm_breakpoint) {
-        width: 75%;
+    @media screen and (min-width: $md_breakpoint) {
+        width: 23rem;
+        height: 20rem;
+        display: block;
     }
-    .introBannerTitle {
-        text-transform: uppercase;
-        margin-bottom: 0.5rem;
-        font-size: $font-size-xxl;
-    }
-    .introBannerTitleDesc {
-        margin: 0;
-        text-transform: uppercase;
-        // font-size: 1.3rem;
-        // @media screen and (min-width: $md_breakpoint) {
-        //     font-size: 2rem;
-        // }
-        font-size: $font-size-lg;
+    @media screen and (min-width: $lg_breakpoint) {
+        width: 28rem;
+        height: 25rem;
+        bottom: -7rem;
     }
 }

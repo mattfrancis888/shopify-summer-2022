@@ -96,10 +96,10 @@ const Home: React.FC<{}> = () => {
     return (
         <React.Fragment>
             <HomeCarousel />
-            <div className="homeContentSection">
+            <div className="home-content-section">
                 <div className="introBanner">
                     <animated.div
-                        className="introBannerTextWrap"
+                        className="intro-banner__text-wrap"
                         // style={translateTitle}
                     >
                         <h1 className="introBannerTitle">
@@ -111,7 +111,7 @@ const Home: React.FC<{}> = () => {
                     </animated.div>
                     {/* <div className="modal__fade"></div> */}
                     {/* <img className="ironManImage" alt="" src={IronMan}></img> */}
-                    <img className="nasaImage" alt="" src={NASA}></img>
+                    <img className="nasa-image" alt="" src={NASA}></img>
                 </div>
 
                 <LazyLoad once={true}>

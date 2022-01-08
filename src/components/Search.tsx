@@ -93,25 +93,25 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
             return <Loading />;
         } else if (searchTerm === "")
             return (
-                <h1 className="noResultText">
+                <h1 className="no-result-text">
                     Enter a keyword in the search form
                 </h1>
             );
         else if (data) {
             console.log("sample", data);
             if (data === INTERNET_ERROR)
-                return <h1 className="noResultText">{INTERNET_ERROR}</h1>;
+                return <h1 className="no-result-text">{INTERNET_ERROR}</h1>;
             if (data === MANY_ERROR)
                 return (
-                    <h1 className="noResultText">
+                    <h1 className="no-result-text">
                         Too Many Results, Narrow Your Search
                     </h1>
                 );
             else if (data === MOVIE_NOT_FOUND)
-                return <h1 className="noResultText">{MOVIE_NOT_FOUND}</h1>;
+                return <h1 className="no-result-text">{MOVIE_NOT_FOUND}</h1>;
             else if (data instanceof Array) {
                 if (data.length === 0)
-                    return <h1 className="noResultText">No Results</h1>;
+                    return <h1 className="no-result-text">No Results</h1>;
                 return trail.map((animation, index: number) => {
                     let mediaFromSearch = data[index];
 
@@ -157,7 +157,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                     className={`nominateButton ${
                                         mediasInLocalStorage != null ||
                                         medias.length === MAX_NOMINEE
-                                            ? "nominateButtonDisabled"
+                                            ? "nominate-button--disabled"
                                             : ""
                                     }
                                 `}
@@ -203,11 +203,11 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
         <React.Fragment>
             <animated.h1
                 style={translateTitle}
-                className="searchAndNomineeTitle"
+                className="search-and-nominee-title"
             >
                 Search rover pictures
             </animated.h1>
-            <animated.h1 style={translateTitle} className="searchForTitle">
+            <animated.h1 style={translateTitle} className="search-for-title">
                 {`Searching rover pictures at day: '${searchTerm}'`}
             </animated.h1>
             <form className={"searchbar__form"}>

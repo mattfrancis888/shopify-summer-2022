@@ -185,7 +185,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                 return (
                     <animated.h1
                         style={translateTitle}
-                        className="noResultText"
+                        className="no-result-text"
                     >
                         You Have No Nominations
                     </animated.h1>
@@ -229,7 +229,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
         <React.Fragment>
             <animated.h1
                 style={translateTitle}
-                className="searchAndNomineeTitle"
+                className="search-and-nominee-title"
             >
                 Your liked Mars pictures
             </animated.h1>
