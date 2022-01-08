@@ -142,11 +142,11 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                 <div
                                     className={
                                         mediasInLocalStorage != null
-                                            ? "nominee-media_selected"
-                                            : "nominee-media_selected--no"
+                                            ? "nominee-media__selected"
+                                            : "nominee-media__selected--no"
                                     }
                                 >
-                                    {/* <h1>Liked</h1> */}
+                                    <h1>Liked</h1>
                                 </div>
                                 <div className="nominee-media__text-wrap">
                                     <h1>ID: {mediaFromSearch.id}</h1>
@@ -172,10 +172,11 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                             : false
                                     }
                                 >
-                                    {mediasInLocalStorage != null
-                                        ? "Liked"
-                                        : medias.length === MAX_NOMINEE
+                                    {mediasInLocalStorage &&
+                                    medias.length === MAX_NOMINEE
                                         ? "No Spots"
+                                        : mediasInLocalStorage != null
+                                        ? "liked"
                                         : "Like"}
                                 </button>
                             </Media>
