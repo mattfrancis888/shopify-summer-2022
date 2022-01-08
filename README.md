@@ -1,4 +1,4 @@
-#Disclaimer - This challenge is based on a previous successful admission to Shopify challenge 8 months ago. Hence certain files are 8 months old.
+# Disclaimer - This challenge is based on a previous successful admission to the Shopify challenge 8 months ago. Hence, certain files are 8 months old.
 https://github.com/mattfrancis888/shopify1
 
 # Shopify Challenge - Spacestagram: Image-sharing from the final frontier
