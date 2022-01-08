@@ -13,77 +13,74 @@
     margin-top: 1rem;
 }
 
-.nomineeMediaContainer {
-    min-height: 10rem;
-    position: relative;
-    margin-top: 2.5rem;
-    margin-bottom: 10rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    row-gap: 5rem;
-    @media screen and (min-width: $sm_breakpoint) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1.5rem;
+.nominee-media {
+    &__container {
+        min-height: 10rem;
+        position: relative;
+        margin-top: 2.5rem;
+        margin-bottom: 10rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
         row-gap: 5rem;
+        @media screen and (min-width: $sm_breakpoint) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.5rem;
+            row-gap: 5rem;
+        }
+        @media screen and (min-width: $xl_breakpoint) {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 1.5rem;
+        }
     }
-    @media screen and (min-width: $xl_breakpoint) {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 1.5rem;
+    &__selected {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+
+        h1 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: 1.5rem 3rem;
+            @media screen and (min-width: $lg_breakpoint) {
+                font-size: 1.4rem;
+                margin: 2.5rem 4rem;
+            }
+            &:after {
+                content: "";
+                left: -2rem;
+                top: 0.8rem;
+                @media screen and (min-width: $lg_breakpoint) {
+                    top: 1.2rem;
+                }
+                width: 100%;
+                height: 100%;
+                transform: skew(-35deg);
+                position: absolute;
+                z-index: -1;
+                background: red;
+            }
+        }
+        &--no {
+            display: none;
+        }
     }
 }
+
 .no-result-text {
     text-transform: uppercase;
     position: absolute;
     top: -2rem;
 }
 
-.nomineeMediaSelected {
-    display: block;
-    position: absolute;
-    overflow: hidden;
-    top: 2rem;
-    left: 50%;
-    transform: translateX(-50%) rotate(90deg);
-
-    h1 {
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        margin: 1.5rem 3rem;
-        @media screen and (min-width: $lg_breakpoint) {
-            font-size: 1.4rem;
-            margin: 2.5rem 4rem;
-        }
-        &:after {
-            content: "";
-            left: -2rem;
-            top: 0.8rem;
-            @media screen and (min-width: $lg_breakpoint) {
-                top: 1.2rem;
-            }
-            width: 100%;
-            height: 100%;
-            transform: skew(-35deg);
-            position: absolute;
-            z-index: -1;
-            background: red;
-        }
-    }
-}
-
-.nomineeMediaUnselected {
-    display: none;
-}
-.nomineeMedia {
+.nominee-media {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    .showNomineePosterBorder {
-        border: 1rem solid red;
-    }
-    .hideNominePosterBorder {
-        border: none;
-    }
+
     img {
         width: 100%;
         height: 22rem;
@@ -100,30 +97,31 @@
             object-position: 70% 70%;
         }
     }
-}
-.nomineeMediaTextWrap {
-    text-transform: uppercase;
-    margin-top: 1.5rem;
-    h1 {
-        margin: 0;
-        font-weight: bold;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: $font-size-md;
-    }
-    p {
-        color: #858585;
-        font-weight: bold;
-        margin: 0;
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-        letter-spacing: 0.1rem;
+
+    &__text-wrap {
+        text-transform: uppercase;
+        margin-top: 1.5rem;
+        h1 {
+            margin: 0;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: $font-size-md;
+        }
+        p {
+            color: #858585;
+            font-weight: bold;
+            margin: 0;
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+        }
     }
 }
 
-.nominateButton,
-.removeButton {
+.nominate-button,
+.remove-button {
     margin-top: 2rem;
     cursor: pointer;
     text-transform: uppercase;

@@ -128,7 +128,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
 
                             return (
                                 <animated.div
-                                    className="nomineeMedia"
+                                    className="nominee-media"
                                     style={animation}
                                     key={index}
                                 >
@@ -157,7 +157,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                                             }}
                                             alt="poster"
                                         />
-                                        <div className="nomineeMediaTextWrap">
+                                        <div className="nominee-media__text-wrap">
                                             {/* <h1>{media.Title}</h1>
                                             <p>{media.Year}</p>
                                              */}
@@ -166,7 +166,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                                             <p>{media.earth_date}</p>
                                         </div>
                                         <button
-                                            className="removeButton"
+                                            className="remove-button"
                                             onClick={(e) => {
                                                 e.stopPropagation();
                                                 // props.removeItem(media.imdbID);
@@ -271,7 +271,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                 );
             })}
 
-            <div className="nomineeMediaContainer">{renderMedias()}</div>
+            <div className="nominee-media__container">{renderMedias()}</div>
         </React.Fragment>
     );
 };

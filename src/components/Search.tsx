@@ -123,7 +123,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                         <animated.div
                             style={animation}
                             key={index}
-                            className="nomineeMedia"
+                            className="nominee-media"
                         >
                             <Media media={mediaFromSearch}>
                                 <img
@@ -142,19 +142,19 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                 <div
                                     className={
                                         mediasInLocalStorage != null
-                                            ? "nomineeMediaSelected"
-                                            : "nomineeMediaUnselected"
+                                            ? "nominee-media_selected"
+                                            : "nominee-media_selected--no"
                                     }
                                 >
                                     <h1>Liked</h1>
                                 </div>
-                                <div className="nomineeMediaTextWrap">
+                                <div className="nominee-media__text-wrap">
                                     <h1>ID: {mediaFromSearch.id}</h1>
                                     <h1>{mediaFromSearch.rover.name} Rover</h1>
                                     <p>{mediaFromSearch.earth_date}</p>
                                 </div>
                                 <button
-                                    className={`nominateButton ${
+                                    className={`nominate-button ${
                                         mediasInLocalStorage != null ||
                                         medias.length === MAX_NOMINEE
                                             ? "nominate-button--disabled"
@@ -227,7 +227,9 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                 />
                 <AiOutlineSearch className="searchbar__icons" />
             </form>
-            <div className="nomineeMediaContainer">{renderSearchPreview()}</div>
+            <div className="nominee-media__container">
+                {renderSearchPreview()}
+            </div>
         </React.Fragment>
     );
 };

@@ -168,7 +168,7 @@ const Media: React.FC<MediaProps> = (props) => {
         <React.Fragment>
             {renderModal()}
             <div
-                className="nomineeMedia"
+                className="nominee-media"
                 onClick={() => {
                     modalShow(media);
                 }}
