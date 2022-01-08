@@ -94,7 +94,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
         } else if (searchTerm === "")
             return (
                 <h1 className="no-result-text">
-                    Enter a keyword in the search form
+                    Enter a day in the search form
                 </h1>
             );
         else if (data) {
@@ -146,7 +146,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                             : "nominee-media_selected--no"
                                     }
                                 >
-                                    <h1>Liked</h1>
+                                    {/* <h1>Liked</h1> */}
                                 </div>
                                 <div className="nominee-media__text-wrap">
                                     <h1>ID: {mediaFromSearch.id}</h1>
@@ -216,7 +216,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                     data-testid="searchbar__input"
                     className="searchbar__input"
                     type="search"
-                    placeholder="Search Pictures From Day 0 and onwards"
+                    placeholder="Search From Day 0 and onwards"
                     name="search"
                     onChange={(e) => {
                         setSearchTerm(e.target.value);

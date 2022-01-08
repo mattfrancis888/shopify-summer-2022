@@ -19,6 +19,7 @@
         ::placeholder {
             color: white;
             text-transform: uppercase;
+            font-size: $font-size-md;
         }
         @media screen and (min-width: $lg_breakpoint) {
             width: 50%;
@@ -26,7 +27,7 @@
             padding-left: 1.5rem;
         }
         input[type="search"] {
-            font-size: $font-size-lg;
+            font-size: $font-size-md;
         }
     }
     &__icons {
