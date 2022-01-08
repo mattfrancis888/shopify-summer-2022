@@ -13,7 +13,7 @@
         color: white;
         padding: 0.75rem;
         padding-left: 1.5rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         margin-right: auto;
         position: relative;
         ::placeholder {
@@ -103,4 +103,6 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: $font-size-lg;
+    line-height: 2;
+    margin-top: 0;
 }

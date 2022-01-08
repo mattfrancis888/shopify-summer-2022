@@ -19,6 +19,20 @@ const slides = [
     {
         title: "Pic1",
         mobileImage:
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
+        logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
+        description: "Meet Curiosity - Mars' Rover",
+        fallbackMobileImage:
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
+        fallbackImage:
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
+        fallbackLogo:
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
+    },
+    {
+        title: "Pic2",
+        mobileImage:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
@@ -29,20 +43,6 @@ const slides = [
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         fallbackLogo:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
-    },
-    {
-        title: "Pic2",
-        mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
-        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
-        logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
-        description: "Meet Perseverance - Mars' Rover",
-        fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
-        fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
-        fallbackLogo:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
     {
         title: "Pic3",

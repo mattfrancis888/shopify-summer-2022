@@ -187,7 +187,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                         style={translateTitle}
                         className="no-result-text"
                     >
-                        You Have No Nominations
+                        You Have liked no pictures
                     </animated.h1>
                 );
             }

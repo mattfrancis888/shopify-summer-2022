@@ -103,10 +103,11 @@ const Home: React.FC<{}> = () => {
                         // style={translateTitle}
                     >
                         <h1 className="intro-banner__text-wrap-title">
-                            Explore Mars WIth Nasa
+                            Explore Mars WIth Nasa And 'Curiosity'
                         </h1>
                         <p className="intro-banner__text-wrap-desc">
-                            Search rover pictures and like your top 5 pictures
+                            Search rover pictures from 'Curiosity' (our mars
+                            rover) and like your top 5 pictures
                         </p>
                     </animated.div>
                     {/* <div className="modal__fade"></div> */}

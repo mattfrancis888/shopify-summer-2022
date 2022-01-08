@@ -173,10 +173,10 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                                     }
                                 >
                                     {mediasInLocalStorage != null
-                                        ? "Like"
+                                        ? "Liked"
                                         : medias.length === MAX_NOMINEE
                                         ? "No Spots"
-                                        : "Liked"}
+                                        : "Like"}
                                 </button>
                             </Media>
                         </animated.div>
@@ -205,7 +205,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                 style={translateTitle}
                 className="search-and-nominee-title"
             >
-                Search rover pictures
+                Search rover pictures from 'Curiosity'
             </animated.h1>
             <animated.h1 style={translateTitle} className="search-for-title">
                 {`Searching rover pictures at day: '${searchTerm}'`}
@@ -216,7 +216,7 @@ const Searchbar: React.FC<SearchbarProps> = (props) => {
                     data-testid="searchbar__input"
                     className="searchbar__input"
                     type="search"
-                    placeholder="Search Pictures From day 1-1000"
+                    placeholder="Search Pictures From Day 0 and onwards"
                     name="search"
                     onChange={(e) => {
                         setSearchTerm(e.target.value);

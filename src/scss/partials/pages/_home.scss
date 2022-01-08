@@ -11,6 +11,7 @@
     font-size: $font-size-xxl;
     margin: 0;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .nominee-media {
@@ -74,6 +75,8 @@
     text-transform: uppercase;
     position: absolute;
     top: -2rem;
+    margin: 0;
+    font-size: $font-size-lg;
 }
 
 .nominee-media {
@@ -169,7 +172,7 @@
 
         &-title {
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-size: $font-size-xxl;
         }
         &-desc {
@@ -180,6 +183,7 @@
             //     font-size: 2rem;
             // }
             font-size: $font-size-lg;
+            line-height: 2;
         }
     }
 }
