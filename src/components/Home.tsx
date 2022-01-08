@@ -94,7 +94,7 @@ const Home: React.FC<{}> = () => {
     });
 
     return (
-        <React.Fragment>
+        <main role="main">
             <HomeCarousel />
             <div className="home-content-section">
                 <div className="intro-banner">
@@ -122,7 +122,7 @@ const Home: React.FC<{}> = () => {
                     <Search medias={medias} addItem={addItem} />
                 </LazyLoad>
             </div>
-        </React.Fragment>
+        </main>
     );
 };
 

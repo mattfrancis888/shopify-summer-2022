@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 // import LolSvg from "./LoLSvg";
 const Header = () => {
     return (
-        <nav>
+        <nav role="navigation">
             <img
                 className="logo"
                 alt="logo"

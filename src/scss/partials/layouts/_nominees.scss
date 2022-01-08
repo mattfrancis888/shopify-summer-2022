@@ -11,16 +11,17 @@
     }
     &__title {
         text-align: center;
-        color: red;
+        // color: red;
+        color: white;
 
-        -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-width: 1px;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
-        @media screen and (min-width: $md_breakpoint) {
-            -webkit-text-stroke-width: 2px;
-        }
+        // @media screen and (min-width: $md_breakpoint) {
+        //     -webkit-text-stroke-width: 2px;
+        // }
         font-size: $font-size-xl;
-        -webkit-text-stroke-color: white;
+        // -webkit-text-stroke-color: white;
         margin: 0;
     }
     &__desc {
