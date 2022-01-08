@@ -28,11 +28,11 @@ const Modal: React.FC<ModalProps> = (props) => {
                 onClick={(e) => {
                     e.stopPropagation();
                 }}
-                className="modalBox"
+                className="modal__box"
                 style={props.animation}
             >
                 <AiOutlineClose
-                    className="modalCloseIcon"
+                    className="modal__box--close"
                     onClick={props.onDismiss}
                 />
                 <h2>{props.title}</h2>

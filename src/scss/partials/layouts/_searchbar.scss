@@ -1,65 +1,65 @@
-.searchBarForm {
-    // background: #316282;
-    // background: #858585;
-    background: $light-blue;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 0.25rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
-    color: white;
-    padding: 0.75rem;
-    padding-left: 1.5rem;
-    margin-top: 1rem;
-    margin-right: auto;
-    position: relative;
-    ::placeholder {
+.searchbar {
+    &__form {
+        // background: #316282;
+        // background: #858585;
+        background: $light-blue;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 0.25rem;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
         color: white;
-        text-transform: uppercase;
-    }
-    @media screen and (min-width: $lg_breakpoint) {
-        width: 50%;
-        padding: 1.2rem;
+        padding: 0.75rem;
         padding-left: 1.5rem;
+        margin-top: 1rem;
+        margin-right: auto;
+        position: relative;
+        ::placeholder {
+            color: white;
+            text-transform: uppercase;
+        }
+        @media screen and (min-width: $lg_breakpoint) {
+            width: 50%;
+            padding: 1.2rem;
+            padding-left: 1.5rem;
+        }
+        input[type="search"] {
+            font-size: $font-size-lg;
+        }
     }
-    input[type="search"] {
-        font-size: $font-size-lg;
-    }
-}
-
-.searchBarIcons {
-    // color: #858585;
-    color: white;
-    font-size: 1.3rem;
-
-    margin-right: 0.3rem;
-    @media screen and (min-width: $sm_breakpoint) {
-        font-size: 1.7rem;
-    }
-    @media screen and (min-width: $md_breakpoint) {
-        font-size: 2.7rem;
-        margin-right: 0.8rem;
-    }
-}
-
-.searchBarInput {
-    font-size: 1.2rem;
-    background: transparent;
-    color: white;
-
-    &:focus {
-        box-shadow: none;
-    }
-    border: none;
-    outline: none;
-    margin: none;
-    width: 100%;
-    font-size: 1rem;
-
-    @media screen and (min-width: $md_breakpoint) {
+    &__icons {
+        // color: #858585;
+        color: white;
         font-size: 1.3rem;
+
+        margin-right: 0.3rem;
+        @media screen and (min-width: $sm_breakpoint) {
+            font-size: 1.7rem;
+        }
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 2.7rem;
+            margin-right: 0.8rem;
+        }
+    }
+    &__input {
+        font-size: 1.2rem;
+        background: transparent;
+        color: white;
+
+        &:focus {
+            box-shadow: none;
+        }
+        border: none;
+        outline: none;
+        margin: none;
+        width: 100%;
+        font-size: 1rem;
+
+        @media screen and (min-width: $md_breakpoint) {
+            font-size: 1.3rem;
+        }
     }
 }
 
@@ -86,57 +86,8 @@
     transition: opacity 0.2s ease-in;
     box-shadow: 0 0 12px #000000;
 }
-.matchRow {
-    padding: 0.5rem;
-    display: flex;
-    cursor: pointer;
-    border-bottom: 1px solid black;
-    background: linear-gradient(to bottom, #e3eaef 5%, #c7d5e0 95%);
-    &:hover {
-        background: #212d3d;
-        .matchTextWrap {
-            color: white;
-        }
-    }
 
-    .matchRowImage {
-        opacity: 0;
-        @media screen and (min-width: $md_breakpoint) {
-            width: 12rem;
-            height: 4.5rem;
-        }
-        width: 12rem;
-        height: 4.5rem;
-    }
-}
-
-.hideMatchContainer {
-    // transition: opacity 0.5s ease-in;
-    opacity: 0;
-}
-
-.matchTextWrap {
-    margin-left: 1rem;
-    color: black;
-
-    overflow: hidden;
-    .matchTitle {
-        margin: 0;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-    .matchPrice {
-        margin: 0;
-        margin-top: 0.25rem;
-        @media screen and (min-width: $md_breakpoint) {
-            margin-top: 0.5rem;
-        }
-    }
-}
-
-.nominateButtonDisabled {
+.nominate-button--disabled {
     cursor: default;
     background: red;
     font-size: $font-size-md;
@@ -147,7 +98,7 @@
     }
 }
 
-.searchForTitle {
+.search-for-title {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     font-weight: bold;

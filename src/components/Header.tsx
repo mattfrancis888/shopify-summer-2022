@@ -13,7 +13,7 @@ const Header = () => {
                 alt="logo"
                 src="https://cdn3.iconfinder.com/data/icons/social-media-2068/64/_shopping-512.png"
             />
-            <div className="headerTextsWrap">
+            <div className="header-text-wrap">
                 <h1>Spacestagram</h1>
             </div>
         </nav>

@@ -1,38 +1,39 @@
-.maxNomineesBanner {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    background: red;
-    padding: 3rem;
-    margin: 1rem 0;
-    border-radius: 0.25rem;
-}
-
-.maxNomineesTitle {
-    text-align: center;
-    color: red;
-
-    -webkit-text-stroke-width: 1px;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    @media screen and (min-width: $md_breakpoint) {
-        -webkit-text-stroke-width: 2px;
+.max-nominee {
+    &__banner {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        background: red;
+        padding: 3rem;
+        margin: 1rem 0;
+        border-radius: 0.25rem;
     }
-    font-size: $font-size-xl;
-    -webkit-text-stroke-color: white;
-    margin: 0;
+    &__title {
+        text-align: center;
+        color: red;
+
+        -webkit-text-stroke-width: 1px;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        @media screen and (min-width: $md_breakpoint) {
+            -webkit-text-stroke-width: 2px;
+        }
+        font-size: $font-size-xl;
+        -webkit-text-stroke-color: white;
+        margin: 0;
+    }
+    &__desc {
+        font-size: $font-size-xl;
+        text-transform: uppercase;
+
+        margin: 0;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
 }
 
-.maxNomineesDesc {
-    font-size: $font-size-xl;
-    text-transform: uppercase;
-
-    margin: 0;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-.bannerBorder {
+.banner-border {
     position: absolute;
 
     // top: 65%;

@@ -19,44 +19,44 @@ const slides = [
     {
         title: "Pic1",
         mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384571/shopify2/wise_nebula.jpg",
-        image: "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2020/05/helicopter_landing_composite_crop-web-1.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "Meet Ingenunity - Mars' Helicopter ",
         fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1620418766/shopify1/Avengers-Infinity-War-Poster.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
         fallbackLogo:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573668/shopify-summer-2022/helicopter_landing_composite_crop-web-1.jpg",
     },
     {
         title: "Pic2",
         mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
-        image: "https://wallpaperaccess.com/full/1747542.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
         logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "Meet Perseverance - Mars' Rover",
         fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
         fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384716/shopify2/106194367-1571709112694gettyimages-103017185.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573688/shopify-summer-2022/1747542.jpg",
         fallbackLogo:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
     {
         title: "Pic3",
         mobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573704/shopify-summer-2022/nasa_name_main-1280x720.jpg",
         // image:
         //   "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
-        image: "https://www.slashgear.com/wp-content/uploads/2019/08/nasa_name_main-1280x720.jpg",
+        image: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573704/shopify-summer-2022/nasa_name_main-1280x720.jpg",
         logo: "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
         description: "Name our next rover",
         fallbackMobileImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573704/shopify-summer-2022/nasa_name_main-1280x720.jpg",
         fallbackImage:
-            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384658/shopify2/helixnebula-169.jpg",
+            "https://res.cloudinary.com/du8n2aa4p/image/upload/v1641573704/shopify-summer-2022/nasa_name_main-1280x720.jpg",
         fallbackLogo:
             "https://res.cloudinary.com/du8n2aa4p/image/upload/v1631384602/shopify2/5ecec99f73e4440004f09e7c.png",
     },
@@ -134,7 +134,7 @@ const HomeCarousel: React.FC<{}> = () => {
         });
 
         anime({
-            targets: ".slideImageLogoAndDescWrap",
+            targets: ".slide__image-logo-and-desc",
             opacity: [
                 {
                     value: [0, 1],
@@ -191,9 +191,9 @@ const HomeCarousel: React.FC<{}> = () => {
                 <Slide
                     index={index}
                     key={index}
-                    className={`homeCarouselContainer`}
+                    className={`home-carousel-container`}
                 >
-                    <div className="backgroundContainer">
+                    <div className="background-container">
                         {/* Whenever the slide gets clicked, it makes a network request for the image becasue of
                         the hook this is bad.
                         Issue on: https://github.com/pmndrs/react-spring/discussions/1377
@@ -257,12 +257,12 @@ const HomeCarousel: React.FC<{}> = () => {
                          {transition((style, item) => {
                             return (
                                 <div
-                                    className={`slideImageLogoAndDescWrap
+                                    className={`slide__image-logo-and-desc
                                     `}
                                 >
                                     <animated.div style={style}>
                                         <img
-                                            className="slideImageLogo"
+                                            className="slide__image-logo"
                                             src={slide.logo}
                                             alt="game slide"
                                             onError={(e: any) => {
@@ -270,7 +270,7 @@ const HomeCarousel: React.FC<{}> = () => {
                                                 e.target.src = `${slide.fallbackLogo}`;
                                             }}
                                         ></img>
-                                        <h1 className="slideDesc">
+                                        <h1 className="slide__desc">
                                             {slide.description}
                                         </h1>
                                     </animated.div>
@@ -278,12 +278,12 @@ const HomeCarousel: React.FC<{}> = () => {
                             );
                         })} */}
                         <div
-                            className={`slideImageLogoAndDescWrap
+                            className={`slide__image-logo-and-desc
                                     `}
                         >
                             <div>
                                 <img
-                                    className="slideImageLogo"
+                                    className="slide__image-logo"
                                     src={slide.logo}
                                     alt="game slide"
                                     onError={(e: any) => {
@@ -291,7 +291,7 @@ const HomeCarousel: React.FC<{}> = () => {
                                         e.target.src = `${slide.fallbackLogo}`;
                                     }}
                                 ></img>
-                                <h1 className="slideDesc">
+                                <h1 className="slide__desc">
                                     {slide.description}
                                 </h1>
                             </div>
@@ -306,7 +306,7 @@ const HomeCarousel: React.FC<{}> = () => {
         return slides.map((slide, index) => {
             return (
                 <div
-                    className="dotInnerWrap"
+                    className="dot__wrap--inner"
                     key={index}
                     //Because of the ref click above, using onClick={..} would trigger this unintentionally
                     //But if we do onfocus, when a user clicks on the button, it will stop the autoplay
@@ -328,8 +328,8 @@ const HomeCarousel: React.FC<{}> = () => {
                                         <animated.div
                                             className={
                                                 item.stopAutoplay
-                                                    ? "dotFillHide"
-                                                    : "dotFill"
+                                                    ? "dot__fill--hide"
+                                                    : "dot__fill"
                                             }
                                             style={style}
                                         ></animated.div>
@@ -380,9 +380,9 @@ const HomeCarousel: React.FC<{}> = () => {
                     // isPlaying={stopAutoplay ? false : true}
                     // interval={5000}
                 >
-                    <div className="sliderAndDotWrap">
+                    <div className="slider-and-dot">
                         <Slider>{renderSlides()}</Slider>
-                        <div className="dotWrap">{renderDots()}</div>
+                        <div className="dot__wrap">{renderDots()}</div>
                     </div>
                 </CarouselProvider>
             </div>
