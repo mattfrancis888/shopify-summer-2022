@@ -1,4 +1,4 @@
-# Disclaimer - This challenge is based on a previous successful admission to the Shopify challenge 8 months ago. Hence, certain files are 8 months old.
+### Disclaimer - This challenge is based on a previous successful admission to the Shopify challenge 8 months ago. Hence, certain files are 8 months old.
 https://github.com/mattfrancis888/shopify1
 
 # Shopify Challenge - Spacestagram: Image-sharing from the final frontier
@@ -28,6 +28,13 @@ We'd like a simple to use interface that makes it easy to:
 2. Each image result should list at least a title, date of capture (ideally in earth_date) and a button to “like” that image.
 3. Each image can be “liked”, and a user should be able to undo their “like”
 4. The HTML that ends up being served client-side should be accessible and semantic (MDN reference)
+
+### Proving that it meets accesibility standards:
+
+Using `axe` I am able to make the site accesibile. The remaining warnings are because of chrome extensions and libraries that are not up to date with accesibility standards yet.
+
+<img src="readmeImg/nasa_page_2.jpg"/>
+
 
 ## External Resources:
 
