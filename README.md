@@ -1,3 +1,6 @@
+#Disclaimer - This challenge is based on a previous successful admission to Shopify challenge 8 months ago. Hence certain files are 8 months old.
+https://github.com/mattfrancis888/shopify1
+
 # Shopify Challenge - Spacestagram: Image-sharing from the final frontier
 
 For the purposes of this project, Shopify is extending our mission to Make Commerce Better for Everyone to include the whole entire universe. Please build us an app to help share photos from one of NASA’s image APIs.
@@ -35,6 +38,7 @@ We'd like a simple to use interface that makes it easy to:
 ## What It Looks Like
 
 <img src="readmeImg/nasa_page.jpg"/>
+<img src="readmeImg/nasa_page_2.jpg"/>
 
 # Getting Started
 

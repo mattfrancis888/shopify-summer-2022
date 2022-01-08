@@ -231,7 +231,7 @@ const Nominee: React.FC<NomineeProps> = (props) => {
                 style={translateTitle}
                 className="search-and-nominee-title"
             >
-                Your liked Mars pictures
+                Your liked Mars pictures from 'Curiosity'
             </animated.h1>
             {bannerAnimate((animation, item) => {
                 return (
