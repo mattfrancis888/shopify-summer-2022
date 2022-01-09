@@ -20,7 +20,7 @@ We'd like a simple to use interface that makes it easy to:
 
 ### Technical requirements
 
-1. Search results should come from NASA’s free APIs, for which you’ll need a free API key from https://api.nasa.gov -
+1. Search results should come from NASA’s free APIs, for which you’ll need a free API key from https://api.nasa.gov
     - you do not need to enter anything more than your first name, last name, and email address (i.e. application url is not required)
     - We’ve provided screenshots below of demo apps we built using the Astronomy Picture of the Day or Mars Rover Photos APIs (along with Shopify’s open source React component library: Polaris).
     - You are free to use any NASA API you like
@@ -37,7 +37,8 @@ Using `axe` I am able to make the site accessible. The remaining warnings are be
 
 
 ## External Resources:
-
+-   Axe for accesibility.
+-   Lighthouse
 -   Postman to test API requests.
 -   Prettier to format code and EsLint for linting.
 -   React dev tool to check the value of props.
