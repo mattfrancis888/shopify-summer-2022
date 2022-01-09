@@ -31,7 +31,7 @@ We'd like a simple to use interface that makes it easy to:
 
 ### Proving that it meets accesibility standards:
 
-Using `axe` I am able to make the site accesibile. The remaining warnings are because of chrome extensions and libraries that are not up to date with accesibility standards yet.
+Using `axe` I am able to make the site accessible. The remaining warnings are because of chrome extensions and libraries that are not up to date with accessibility standards yet. In a business environment, if accessibility is still an issue, I would use a different carousel library that supports accessibility to remove the leftover issues.
 
 <img src="readmeImg/shopify_accesibility.jpg"/>
 
